@@ -1,0 +1,65 @@
+/* style.css */
+
+/* Give the page a clean look */
+body {
+    font-family: "Comic Sans MS", cursive;
+    text-align: center;
+    background-color: #ac8ad8;
+    margin: 50px;
+}
+
+/* Input box styling */
+#taskInput {
+    font-family: "Comic Sans MS", cursive;
+    padding: 20px;
+    width: 300px;
+}
+
+/* Add button styling */
+#addBtn {
+    font-family: "Comic Sans MS", cursive;
+    padding: 20px 55px;
+    margin-left: 5px;
+    background-color: #835aba;
+    color: white;
+    border: 0.5 rem solid;
+    cursor: pointer;
+}
+
+/* Task list styling */
+#taskList {
+    list-style-type: none;    /* remove default bullets */
+    margin-top: 20px;
+    display: flex;            /* center horizontally */
+    flex-direction: column;   /* stack tasks vertically */
+    align-items: center;      /* center tasks in page */
+    padding-left: 0;          /* reset old padding */
+}
+
+/* Each task item */
+#taskList li {
+    display: flex;               
+    align-items: center;
+    margin: 5px 0;               
+    padding: 5px;
+
+    /* center text + delete button gap */
+    gap: 17px;                    
+}
+
+/* Add heart before each task */
+#taskList li::before {
+    content: "❤️";              /* heart as bullet */
+    margin-right: 1px;           /* 2px gap between heart and text */
+}
+
+
+/* Delete button inside tasks */
+.deleteBtn {
+    font-family: "Comic Sans MS", cursive;
+    background: rgb(252, 2, 131);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
